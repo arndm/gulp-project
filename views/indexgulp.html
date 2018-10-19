@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Gulp!</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="tooplate_style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="css/coda-slider.css" type="text/css" charset="utf-8" />
+
+<link rel="stylesheet" href="css/myedit.css" type="text/css" charset="utf-8" />
+
+
+<style type="text/css">
+
+</style>
+<script src="js/jquery-1.2.6.js" type="text/javascript"></script>
+<script src="js/jquery.scrollTo-1.3.3.js" type="text/javascript"></script>
+<script src="js/jquery.localscroll-1.2.5.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.serialScroll-1.2.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/coda-slider.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+
+<script>
+function openDropdn(){
+    document.getElementById("myDropdown").classList.toggle("show");
+
+}
+
+
+</script>
+
+
+
+
+
+
+
+</head>
+<body>
+<div id="side1"></div>
+<div id="side2"></div>
+<!------------------------------------------------------------------------------------------------------------>
+
+<div id="company_tag_head">
+
+<b>&nbsp; Gulp! </b>
+<div id="ejs_name">
+Hello, <%= user.displayName %> &nbsp;
+</div>
+
+
+</div>
+
+
+
+<div id="slider">
+
+<div class="social-popout"><a href="#"><img src="images/fbce.jpg" /><br/><img src="images/twce.jpg" /></a></div>
+
+<form action="/logout" method="get">
+  <br/><input type="submit" id="logouts" value="Logout"/>
+</form>
+
+  <div id="tooplate_wrapper">
+
+        <div id="tooplate_sidebar">
+
+            <div id="header">
+            	<h1>Welcome!</h1>
+            </div>
+
+
+            <div id="menu">
+                <ul class="navigation">
+                	<li><a href="#home" class="selected">Home</a></li>
+                    <li><a href="#services">Notifications</a></li>
+
+                    <div class="dropdown">
+  <li><a  class="dropbtn" href="#about">Choose Your Menu</a></li>
+  <div id="myDropdown" class="dropdown-content">
+
+
+<form method="post" action="" id="foodForm">
+
+  <br/> <ul class="Main_Course" id="#Mcourse"> <span style="font-size:14px"><b>Main course</b></span> <br />
+
+   <li title="Aminia's famous chicken biryani, mixed rice with 1 pc chicken and potato cooked with a variety of spices. *Gulp Recommended*" class="tooltip" ><span title="Click on the box to select Chicken Biryani" /><input  type="checkbox" name="items" value="Chicken Biryani" class="Mitems" >Chicken Biryani  </li><br />
+
+
+   <li title="Aminia's famous Mutton biryani, mixed rice with 1 pc Mutton and potato, cooked with a variety of spices. *Gulp Recommended" class="tooltip" ><span title="Click on the box to select Mutton Biryani " /><input  type="checkbox" name="items" value="Mutton Biryani " class="Mitems" >Mutton Biryani   </li><br />
+
+   <li title="Aminia's famous egg biryani, mixed rice with 2pc egg and potato cooked with a variety of spices" class="tooltip" ><span title="Click on the box to select Egg Biryani  " /><input  type="checkbox" name="items" value="Egg Biryani  " class="Mitems" >Egg Biryani    </li><br />
+
+   <li title="Similar to Mutton biryani but with more spices and flvours and tastes more pungent" class="tooltip" ><span title="Click on the box to select Mutton Hyderabadi Biryani  " /><input  type="checkbox" name="items" value="Mutton Hyderabadi Biryani  " class="Mitems" >Mutton Hyderabadi Biryani    </li><br />
+
+   <li title="Unlike normal biryani, this is cooked on low flame under pressure in sealed containers. *Gulp Recommended*
+" class="tooltip" id="Vbir"><span title="Click on the box to select Vegetable Dum Biryani   " /><input  type="checkbox" name="items" value="Vegetable Dum Biryani   " class="Mitems" >Vegetable Dum Biryani     </li><br />
+
+
+<li title="Mild flavoured polao rice cooked with green peas" class="tooltip" id="Vpol"><span title="Click on the box to select Peas Polao   " /><input  type="checkbox" name="items" value="Peas Polao   " class="Mitems" >Peas Polao     </li><br />
+
+<li title=" Kindly mention the number of pieces to be ordered in the feedback section, along with any request for alternative roti item, if any (2pcs/3pcs) " class="tooltip" id="Vnan"><span title="Click on the box to select Butter Nan    " /><input  type="checkbox" name="items" value="Butter Nan    " class="Mitems" >Butter Nan      </li><br /><br/>
+
+
+
+
+    </ul>
+    <ul class="Side_Dish"><span style="font-size:14px"><b> On the side</b></span><br/>
+
+
+    <li title=" A north indian curry,soft paneer cubes in rich  creamy gravy and served with cottage cheese/cream; Pcs-8 *Gulp Recommended* " class="tooltip" id="Vbpn"><span title="Click on the box to select Paneer Butter Masala " /><input  type="checkbox" name="items" value="Paneer Butter Masala " class="Sitems" >Paneer Butter Masala  </li><br />
+
+    <li title=" Soft panner cubes in smooth gravy consisting of spinach, tomato gravy sauce and paneer in a thick paste made from puréed spinach and seasoned with garlic, garam masala, and other spices; Pcs-8 " class="tooltip" id="Vppn"><span title="Click on the box to select Palak Paneer " /><input  type="checkbox" name="items" value="Palak Paneer" class="Sitems" >Palak Paneer </li><br />
+
+    <li title="  An awadhi dish; big chicken piece marinated and cooked in spicy and rich poppy seed based gravy; Pcs-1 " class="tooltip" ><span title="Click on the box to select Chicken Chap  " /><input  type="checkbox" name="items" value="Chicken Chap " class="Sitems" > Chicken Chap  </li><br />
+
+    <li title="  The chicken handi recipe is made in handi which is a  kind of cooking pan that was used in Indian cooking with a shallow depth and a wide bottom in olden days which was made of clay; Boneless " class="tooltip" ><span title="Click on the box to select Chicken Handi  " /><input  type="checkbox" name="items" value="Chicken Handi " class="Sitems" > Chicken Handi  </li><br />
+
+    <li title="   Chicken leg pieces with creamy delicious gravy, cooked with a variety of spices ; Pcs-2 " class="tooltip" ><span title="Click on the box to select Chicken Tengri Butter Masala  " /><input  type="checkbox" name="items" value="Chicken Tengri Butter Masala 1/2  " class="Sitems" > Chicken Tengri Butter Masala </li><br />
+
+
+    <li title="   An awadhi dish; big mutton pieces marinated and cooked in spicy and rich poppy seed based gravy; Pcs-2 " class="tooltip" ><span title="Click on the box to select Mutton Chap    " /><input  type="checkbox" name="items" value="Mutton Chap    " class="Sitems" > Mutton Chap  </li><br />
+
+     <li title="    The mutton handi recipe is made in handi which is a kind of cooking pan used in Indian cooking with a shallow depth and a wide bottom in olden days which was made of clay; Boneless " class="tooltip" ><span title="Click on the box to select Mutton Handi    " /><input  type="checkbox" name="items" value="Mutton Handi" class="Sitems" > Mutton Handi  </li><br />
+
+<li title=" A bengal dish with Chunks of goat meat and potatoes cooked in an onion-ginger-garlic gravy with handsome portions of spices. *Gulp recommended*; Pcs-2 " class="tooltip" ><span title="Click on the box to select Mutton Kassa    " /><input  type="checkbox" name="items" value="Mutton Kassa" class="Sitems" > Mutton Kassa </li><br />
+
+
+
+    </ul>
+
+  <br/>  <ul class="Desert"><span style="font-size:14px"><b> Desert</b></span><br/>
+
+    <li title="Mishti doi is a fermented sweet yogurt (from Annapurna). P.S: There is an added surprise in the desert section." class="tooltip" id="Vdoi"><span title="Click on the box to select Mishti Doi  " /><input  type="checkbox" name="items" value="Mishti Doi" class="Ditems" > Mishti Doi </li><br />
+
+
+     <li title="One from a many ;-) (from Annapurna). P.S: There is an added surprise in the desert section." class="tooltip" id="Vsan"><span title="Click on the box to select Sandesh  " /><input  type="checkbox" name="items" value="Sandesh" class="Ditems" > Sandesh </li><br />
+
+      <!--  <li title="Homemade, soft ,choclate flavoured muffins *Gulp Recommended*" class="tooltip" ><span title="Click on the box to select Chocolate Muffin   " /><input  type="checkbox" name="items" value="Chocolate Muffin " class="Ditems" >Chocolate Muffin  </li><br /> -->
+
+
+
+    </ul>
+
+    <ul class="Not attending"> <br/>
+
+
+  <li title="Select this option if you are unable to attend lunch during the day of the feast "   class="tooltip"><span title="Click on the box to select Not Attending   " /><input  type="checkbox" name="items" value="Not Attending " class="NA" >Not Attending </li><br/><br/>
+
+    </ul>
+
+<input type="submit" id="submitFoodform" value="Submit Order"><br/>
+<p></p>
+ </form>
+
+</div>
+</div>
+
+
+
+                    <li><a href="#gallery" id="gal">Birthdays</a></li>
+                    <li><a href="#contact" class="last">Contact Us</a></li>
+                </ul>
+            </div>
+
+		</div> <!-- end of sidebar -->
+
+        <div id="content">
+       	  	<div class="scroll">
+        	  <div class="scrollContainer">
+                <div class="panel" id="home">
+
+                	<h2>Welcome to Gulp!</h2>
+                    <p><em>Eating is an experience that involves all senses and Gulp ensures that they recieve the utmost delight.</em></p>
+
+                    <p>Gulp is a custom food portal and it provides a variety of food options to choose from or even to build your customer order list. We aim at organizing hassle free birthday treats and celebrations, and make sure every account member is part of it.
+</p>
+
+                    <div class="cleaner h20"></div>
+
+
+
+                    <p>Since celebrating birthdays are an integral part of every project, we  have listed all the dates categorically so that you do not miss out any.
+</p>
+<p>Keep an eye on the notifications tab for new announcement and dates. We would appreciate your feedback on the <b>Contact Us</b> page, to improve your experience.</p>
+<br/>
+<p>So what are you waiting for? Place your order and start Gulping!</p>
+
+                </div> <!-- end of home -->
+
+        	    <div class="panel" id="about">
+                	<h2>You have ordered:</h2>
+
+
+                    	<b><ul id="foodChecked"></ul></b>
+                       <!-- <input type="text" id="values" name="values"> -->
+
+                       <br/> <div id="processing">Processing . . .</div><div id="foodFormReply"></div><div id="dummy"></div>
+      	      	</div> <!-- end of about us -->
+
+        	    <div class="panel" id="services">
+                    <h2>Notifications</h2>
+
+                    <p><em>This section will be consist of the instruction and news, and will be updated from time to time.</em></p>
+                    <p>There will be an event next week. We are organizing it on November 16, Wednesday in the cafeteria. You will be updated if there is any change in the schedule/location. <br/><br/> Please place your order for this treat in <b> Choose Your Menu </b> section of the page. The last date of placing order would be November 14, 11:59 PM. Kindly leave your comments/feedback in the Contact Us page.</p><br/>
+                    <p>You can modify your order any number of times during these period, and the latest order will be considered. Please contact on the numbers in the last page in case of any issues.</p>
+                    <div class="cleaner h20"></div>
+
+
+
+      	      	</div> <!-- end of services -->
+
+        	  	<div class="panel" id="gallery">
+
+                    <div id="tables">
+                         <table>
+                          <tr class="row">
+                            <td><img src="images/jan.jpg" id="jan" class="bday"></td>
+                            <td><img src="images/feb.jpg" id="feb" class="bday"></td>
+                            <td><img src="images/mar.jpg" id="mar" class="bday"></td>
+                          </tr>
+                          <tr class="row">
+                            <td><img src="images/apr.jpg" id="apr" class="bday"></td>
+                            <td><img src="images/may.jpg" id="may" class="bday"></td>
+                            <td><img src="images/june.jpg" id="jun" class="bday"></td>
+                          </tr>
+                          <tr class="row">
+                            <td><img src="images/jul.jpg" id="jul" class="bday"></td>
+                            <td><img src="images/aug.jpg" id="aug" class="bday"></td>
+                            <td><img src="images/sep.jpg" id="sep" class="bday"></td>
+                          </tr>
+                          <tr class="row">
+                            <td><img src="images/oct.jpg" id="oct" class="bday"></td>
+                            <td><img src="images/nov.jpg" id="nov" class="bday"></td>
+                            <td><img src="images/dec.jpg" id="dec" class="bday"></td>
+                          </tr>
+                        </table>
+      	      	</div>
+
+                <!-- list names for months -->
+                <div id="common">
+
+                <div id="forjan" >
+                <b><ol> <br/>
+                <li> Saptarshi Chakraborty <span style="float:right"> Jan 01</span></li>
+                <li> Hemanta Thokchom <span style="float:right"> Jan 02</span></li>
+                </ol></b>
+                <div class="left-arrow" id="JAN">Back</div>
+                </div>
+
+
+               <div id="forfeb">
+                <b><ol> <br/>
+                <li> Rohan Majhi <span style="float:right"> Feb 05</span></li>
+                <li> Rashmita Purkayastha <span style="float:right"> Feb 17</span></li>
+                </ol></b>
+                <div class="left-arrow" id="FEB">Back</div>
+                </div>
+
+                <div id="formar">
+                <b><ol> <br/>
+                <li> Niladri Maiti <span style="float:right"> Mar 03</span></li>
+                <li> Subhrajyoti Dash <span style="float:right"> Mar 07</span></li>
+                <li> Samit Ghosh <span style="float:right"> Mar 08</span></li>
+                <li> Sumana Gupta <span style="float:right"> Mar 30</span></li>
+
+                </ol></b>
+                <div class="left-arrow" id="MAR">Back</div>
+                </div>
+
+                <div id="forapr">
+                <b><ol> <br/>
+                <li> Bilas Mandal <span style="float:right"> Apr 08</span></li>
+                <li> Saurav Roy <span style="float:right"> Apr 24</span></li>
+                </ol></b>
+                <div class="left-arrow" id="APR">Back</div>
+                </div>
+
+                <div id="formay">
+                <b><ol> <br/>
+                <li> Trupti Madhusudan Bapat <span style="float:right"> May 24</span></li>
+
+                </ol></b>
+                <div class="left-arrow" id="MAY">Back</div>
+                </div>
+
+                <div id="forjun">
+                <b><ol> <br/>
+                <li> Sayom Ghosh <span style="float:right"> June 07</span></li>
+                <li> Nishant Kumar <span style="float:right"> June 15</span></li>
+                <li> Usain Basha <span style="float:right"> June 24</span></li>
+                </ol></b>
+                <div class="left-arrow" id="JUN">Back</div>
+                </div>
+
+                <div id="forjul">
+                <b><ol> <br/>
+                <li> Madhura Sen Ghosh <span style="float:right"> Jul 01</span></li>
+                <li> Nishit Kilikadar  <span style="float:right"> Jul 07</span></li>
+                <li> Agnibin Dasgupta  <span style="float:right"> Jul 09</span></li>
+                <li> Sutapa Bhattacharya  <span style="float:right"> Jul 13</span></li>
+                <li> Arindam Roy  <span style="float:right"> Jul 16</span></li>
+                <li> Rupsa Mukherjee <span style="float:right"> Jul 20</span></li>
+                <li> Koushik Dutta <span style="float:right"> Jul 30</span></li>
+                </ol></b>
+                <div class="left-arrow" id="JUL">Back</div>
+                </div>
+
+                <div id="foraug">
+                <b><ol> <br/>
+                <li> Raati Sarkar <span style="float:right"> Aug 12</span></li>
+                <li> Geetha Parlapalli <span style="float:right"> Aug 16</span></li>
+                <li> Gourav Banerjee <span style="float:right"> Aug 24</span></li>
+                <li> Rakesh Rajan <span style="float:right"> Aug 29</span></li>
+                </ol></b>
+                <div class="left-arrow" id="AUG">Back</div>
+                </div>
+
+                <div id="forsep">
+                <b><ol> <br/>
+                <li> Anindita Saha <span style="float:right"> Sep 19</span></li>
+                <li> Ayush Kumar <span style="float:right"> Sep 29</span></li>
+                </ol></b>
+                <div class="left-arrow" id="SEP">Back</div>
+                </div>
+
+                <div id="foroct">
+                <b><ol> <br/>
+                <li> Rahul Banga <span style="float:right"> Oct 19</span></li>
+                <li> Arindam Saha <span style="float:right"> Oct 20</span></li>
+                <li> Debashree Rudra <span style="float:right"> Oct 26</span></li>
+                </ol></b>
+                <div class="left-arrow" id="OCT">Back</div>
+                </div>
+
+                <div id="fornov">
+                <b><ol> <br/>
+                <li> Anuradha Das <span style="float:right"> Nov 12</span></li>
+                <li> Abhranil Mukhopadhyay <span style="float:right"> Nov 13</span></li>
+                <li> Ayan Basak <span style="float:right"> Nov 15</span></li>
+
+
+                </ol></b>
+                <div class="left-arrow" id="NOV">Back</div>
+                </div>
+
+                <div id="fordec">
+                <b><ol> <br/>
+
+                <li> Pratyush Kundu <span style="float:right"> Dec 05</span></li>
+                <li> Mriganka Mallick <span style="float:right"> Dec 21</span></li>
+                <li> Abhijit Sarkar <span style="float:right"> Dec 22</span></li>
+                <li> Alavala Pulla Reddy <span style="float:right"> Dec 26</span></li>
+                <li> Alok Jha <span style="float:right"> Dec 28</span></li>
+                <li> Probal Basak <span style="float:right"> Dec 31</span></li>
+
+                </ol></b>
+                <div class="left-arrow" id="DEC">Back</div>
+                </div>
+
+               </div>
+
+               </div>
+
+                 <!-- end of gallery -->
+
+
+
+                <div class="panel" id="contact">
+                    <h2 style="text-align:center">Contact Information</h2>
+                    <h5 style="text-align:center">For any queries, you can drop a text or call us:</h5>
+                    <ul style="text-align:left">(+91)8981436414 (<b>Arindam Saha - Admin</b>)</ul>
+                    <ul style="text-align:left">(+91)9732057233 (<b>Bilas Mandal</b>)</ul>
+                    <ul style="text-align:left">(+91)8981301682 (<b>Anindita Saha</b>)</ul>
+
+                	<br/>
+                    <h5>Your feedback is important for us to improve and serve you better</h5>
+
+                    <div id="contact_form">
+                      	<form method="post" id="feedbackForm" action="">
+
+
+				<label for="text"></label><textarea id="text" name="text" rows="3" cols="3" class="required" placeholder="Let us know what you feel about Gulp!"></textarea>
+
+
+        <input type="submit" class="submit_btn float_l" name="submit" id="feedbackSubmit" value="Send" />
+        <input type="reset" class="submit_btn float_r" name="reset" id="reset" value="Reset" />
+
+                    	</form>
+
+                  	</div>
+                      <br/><br/><br/><h4><div id="feedbackResult" style="text-align:center"></div></h4>
+        	  	</div>
+
+      	  	</div> <!-- end of scroll -->
+		</div>
+
+        <div class="cleaner"></div>
+	</div>
+    </div> <!-- end of content -->
+
+    <div id="footer">
+       <br/><p> Copyright © 2016 Arindam Saha <div id="rel">Rel 1.2</div></p>
+
+		<!--
+        <a href="http://www.tooplate.com/view/2024-vertiwood">Vertiwood</a>
+        by <a rel="nofollow" href="http://www.tooplate.com">Templates</a><br />
+        -->
+	</div>
+
+</div>
+</body>
+</html>

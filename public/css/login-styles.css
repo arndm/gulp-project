@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+       
+       body {
+              background-image: url("../images/bg-pic.jpg");
+			   background-size:     cover;                      /* <------ */
+   			 background-repeat:   no-repeat;
+    
+       }
+	  
+	   
+	h1 {
+		
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e9ba81+0,b8792c+41,ce8a36+69,f1c793+100 */
+
+		color:#DAA219;
+		border-style:dotted;
+		
+		box-shadow:inset;
+		box-shadow:#000000;
+		text-shadow:#DA9232;
+		
+		text-decoration:underline;
+		border-bottom-color:#000000;
+		border-bottom-width:thick;
+		border-bottom-style:dashed;
+		
+		border-radius: 35px;
+		text-align: center;
+		margin-top:0px;
+		position: relative;
+		margin: auto;
+		width: 400px;
+		left:0px;
+		font-size:7em;
+		font-style:oblique;
+		font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+		background-image:url(../gla.jpg);
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+    	
+		div  {
+			position: absolute;
+  width: 350px;
+  height: 150px;
+  align-content: center;
+  z-index: 15;
+  top: 60%;
+  left: 50%;
+  margin: -10px 0 0 -330px;
+  background: nonce;
+  
+  -webkit-transition-property: -webkit-box-shadow, background;
+	-webkit-transition-duration: 0.25s;
+	-moz-box-shadow: 0px 0px 2px #000;
+	
+}
+img {
+	display: block;
+	height: 48px;
+	width: 390px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	
+}
+       
+	 ol {
+		   list-style-type:none;
+		   border-color:#EAA64F;
+		   margin: 10px 0;
+		   position:relative;
+		   right: 55px;
+		   
+	   }
+       
+      #login {
+		  
+		  
+		   
+		   text-shadow:inherit;
+		   font-size:40px;
+	  }
+      
+       
+    #loginG {
+		position : relative;
+		left: 14px;
+		font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+		font-style:oblique;
+		font-size:30px;
+	}
+
+
+

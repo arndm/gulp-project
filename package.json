@@ -1,0 +1,29 @@
+{
+	"name": "NodejsStarterApp",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node app.js"
+	},
+	"dependencies": {
+		"express": "4.13.x",
+		"cfenv": "1.0.x",
+		"body-parser": "*",
+		"passport": "*",
+		"mongodb" : "*",
+		"passport-google-oauth" : "*",
+		"passport-facebook" : "*",
+		"util" : "*",
+		"express-session" : "*",
+		"cookie-parser" : "*",
+		"fs" : "*",
+		"ejs" : "*",
+		"dateformat" : "*",
+		"connect-mongo" : "*"
+		
+		},
+	"repository": {},
+	"engines": {
+		"node": "4.x"
+	} 
+}
